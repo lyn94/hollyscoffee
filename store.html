@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon_hollys128.ico">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+	<title>HOLLYS COFFEE | STORE</title>
+    <link rel="stylesheet" href="css/store_section.css">
+</head>
+
+<body>
+   <div class="MOVE_TOP_BTN">
+        <ul>
+            <li><a href="#header"><img src="images/arrow-top.png" alt=""></a></li>
+            <li><a href="#footer"><img src="images/arrow-down.png" alt=""></a></li>
+        </ul>
+   </div>
+    <div id="header">
+        <div id="gnb">
+            <div id="top_menu">
+                <a href="index.html" class="logo1"><img src="images/logo.png" alt=""></a>
+                <a href="index.html" class="logo2"><img src="images/logo_mobile.png" alt=""></a>
+                <ul class="t_left cf">
+                    <li><a href="#"><img src="images/gnb_smenu01.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/gnb_smenu02_2.gif" alt=""></a></li>
+                    <li><a href="#"><img src="images/gnb_smenu04.gif" alt=""></a></li>
+                </ul>
+                <ul class="t_right cf">
+                    <li><a href="#">멤버십 로그인</a></li>
+                    <li><a href="#">멤버십 가입</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">中文</a></li>
+                </ul>
+            </div>
+            <div class="outer cf">
+                <div class="menubox">
+                    <ul class="main cf">
+                        <li class="depth1"><a href="menu.html">Menu</a>
+                            <ul class="depth2">
+                                <li><a href="menu.html">New menu</a></li>
+                                <li><a href="#">COFFEE</a></li>.
+                                <li><a href="#">라떼·초콜릿·티</a></li>
+                                <li><a href="#">할리치노·빙수</a></li>
+                                <li><a href="#">스파클링·아이스티</a></li>
+                                <li><a href="#">베이커리·스낵MD</a></li>
+                                <li><a href="#">MD상품</a></li>
+                                <li><a href="#">MD원두</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1"><a href="hollysmall.html">HOLLYS Mall</a>
+                            <ul class="depth2">
+                                <li><a href="hollysmall.html">할리스콘</a></li>
+                                <li><a href="#">할리스 기프트카드</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1"><a href="membership.html">Membership</a>
+                            <ul class="depth2">
+                                <li><a href="membership.html">멤버십 혜택안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1"><a href="hollysnews.html">HOLLYS News</a>
+                            <ul class="depth2">
+                                <li><a href="hollysnews.html">Notice</a></li>
+                                <li><a href="#">Event</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1"><a href="store.html">Store</a>
+                            <ul class="depth2">
+                                <li><a href="store.html">국내</a></li>
+                                <li><a href="#">해외</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1"><a href="hollysis_abouthollys.html">HOLLYS is</a>
+                            <ul class="depth2">
+                                <li><a href="hollysis_abouthollys.html">HOLLYS Coffee</a></li>
+                                <li><a href="#">About Coffee</a></li>
+                                <li><a href="#">CSR</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">혜택 안내</a></li>
+                                <li><a href="#">본사 위치</a></li>
+                                <li><a href="#">채용 안내</a></li>
+                                <li><a href="#">가맹 개설안내</a></li>
+                                <li><a href="#">B2B 사업 소개</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menuopen" style="display:none"><img src="images/btn_menu.gif" alt=""></div>
+                <div class="drill_root">
+                    <ul class="depth1">
+                        <li class="depth1_link"><a href="#">Menu</a>
+                            <ul class="depth2">
+                                <li><a href="menu.html">New menu</a></li>
+                                <li><a href="#">COFFEE</a></li>
+                                <li><a href="#">라떼·초콜릿·티</a></li>
+                                <li><a href="#">할리치노·빙수</a></li>
+                                <li><a href="#">스파클링·아이스티</a></li>
+                                <li><a href="#">베이커리·스낵MD</a></li>
+                                <li><a href="#">MD상품</a></li>
+                                <li><a href="#">MD원두</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1_link"><a href="hollysmall.html">HOLLYS Mall</a>
+                            <ul class="depth2">
+                                <li><a href="hollysmall.html">할리스콘</a></li>
+                                <li><a href="#">할리스 기프트카드</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1_link"><a href="membership.html">Membership</a>
+                            <ul class="depth2">
+                                <li><a href="membership.html">멤버십 혜택안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1_link"><a href="hollysnews.html">HOLLYS News</a>
+                            <ul class="depth2">
+                                <li><a href="hollysnews.html">Notice</a></li>
+                                <li><a href="#">Event</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1_link"><a href="store.html">Store</a>
+                            <ul class="depth2">
+                                <li><a href="store.html">국내</a></li>
+                                <li><a href="#">해외</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1_link"><a href="hollysis_abouthollys.html">HOLLYS is</a>
+                                <ul class="depth2">
+                                <li><a href="hollysis_abouthollys.html">HOLLYS Coffee</a></li>
+                                <li><a href="hollysis_abouthollys.html">About Coffee</a></li>
+                                <li><a href="#">CSR</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">혜택 안내</a></li>
+                                <li><a href="#">본사 위치</a></li>
+                                <li><a href="#">채용 안내</a></li>
+                                <li><a href="#">가맹 개설안내</a></li>
+                                <li><a href="#">B2B 사업 소개</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section" class="cf">
+        <div id="left_section">
+            <div class="HMhollyscon">
+                <a href="menu.html">
+                    <p class="HMj_atv">국내</p>
+                    <p>해외</p>
+                </a>
+            </div>
+            <div class="HMmem">
+                <a href="#">
+                    <img src="images/hollysmall/img_bannerTit01.gif" alt="">
+                    <img src="images/hollysmall/img_crown_membership.gif" alt="">
+                    <img src="images/hollysmall/img_mem.jpg" alt="" class="HMmem_last">
+                </a>
+            </div>
+            <div class="HMfes">
+                <a href="#">
+                    <img src="images/hollysmall/bg_banner_festival.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div id="right_section">
+            <div class="right_tit">
+                <p class="rmsub">Home > Store > 국내</p>
+                <p class="rmtit">국내</p>
+            </div>
+            <div class="map_srch cf">
+                <div class="mapping">
+                    <img src="images/store/img_map.jpg" usemap="#MapStore" alt="전국지도">
+                    <map name="MapStore" id="MapStore">
+			  <area shape="poly" coords="169,127,180,125,187,136,177,142,167,142,166,130" href="#" class="city01" alt="서울" />
+			  <area shape="poly" coords="263,306,276,303,295,290,304,298,289,318" href="#" class="city02" alt="부산" />
+			  <area shape="poly" coords="251,252,268,244,278,254,268,271,256,270" href="#" class="city03" alt="대구" />
+			  <area shape="poly" coords="150,130,159,126,166,147,157,152" href="#" class="city04" alt="인천" />
+			  <area shape="poly" coords="150,304,162,303,175,310,169,320,158,326,147,313" href="#" class="city05" alt="광주" />
+			  <area shape="poly" coords="191,212,202,228,192,234,185,222" href="#" class="city06" alt="대전" />
+			  <area shape="poly" coords="301,291,286,280,291,271,318,273,314,289,307,297" href="#" class="city07" alt="울산" />
+			  <area shape="poly" coords="249,61,306,159,266,167,248,165,239,160,216,158,214,134,208,127,207,110,179,86" href="#" class="city08" alt="강원" />
+			  <area shape="poly" coords="175,88,201,121,214,159,195,178,169,181,159,160,170,156,171,148,191,141,182,120,167,126,130,128" href="#" class="city09" alt="경기" />
+			  <area shape="poly" coords="225,255,240,276,279,278,292,288,267,301,261,313,272,323,265,335,250,328,241,328,232,321,221,322,206,296,211,269" href="#" class="city10" alt="경남" />
+			  <area shape="poly" coords="261,172,294,171,306,163,310,241,323,242,316,269,293,268,286,268,285,277,270,274,283,254,268,239,248,249,250,268,241,271,228,249,224,222,222,202,229,195,255,189" href="#" class="city11" alt="경북" />
+			  <area shape="poly" coords="199,297,218,325,208,339,201,331,194,335,194,351,179,342,142,363,141,351,128,340,177,318" href="#" class="city12" alt="전남" />
+			  <area shape="poly" coords="139,332,126,312,135,305,136,297,149,297,160,288,171,292,192,301,179,311,171,303,153,300,145,306,149,320,149,326" href="#" class="city13" alt="전남" />
+			  <area shape="poly" coords="156,244,168,240,188,244,203,254,211,243,223,249,210,262,203,287,197,296,177,291,158,286,138,293,147,279,145,266,160,263" href="#" class="city14" alt="전북" />
+			  <area shape="poly" coords="126,184,142,184,137,176,155,178,162,187,171,184,190,187,193,205,191,213,179,219,185,229,192,235,205,230,209,232,214,240,204,249,189,242,166,237,154,242,144,231,146,210,126,195" href="#" class="city15" alt="충남" />
+			  <area shape="poly" coords="219,162,237,163,257,171,249,188,233,188,217,203,224,249,197,213,192,185" href="#" class="city16" alt="충북" />
+			  <area shape="poly" coords="141,375,166,372,181,377,176,395,149,402,134,391" href="#" class="city17" alt="제주" />
+			</map>
+                                <div>
+				<img style="display:none; pointer-events:none;" src="images/store/img_city01.png" class="city_layer01" alt="서울" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city02.png" class="city_layer02" alt="부산" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city03.png" class="city_layer03" alt="대구" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city04.png" class="city_layer04" alt="인천" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city05.png" class="city_layer05" alt="광주" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city06.png" class="city_layer06" alt="대전" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city07.png" class="city_layer07" alt="울산" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city08.png" class="city_layer08" alt="강원" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city09.png" class="city_layer09" alt="경기" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city10.png" class="city_layer10" alt="경남" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city11.png" class="city_layer11" alt="경북" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city12.png" class="city_layer12" alt="전남" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city12.png" class="city_layer13" alt="전남" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city13.png" class="city_layer14" alt="전북" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city14.png" class="city_layer15" alt="충남" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city15.png" class="city_layer16" alt="충북" />
+				<img style="display:none; pointer-events:none;" src="images/store/img_city16.png" class="city_layer17" alt="제주" />
+			</div>                                
+                </div>
+                
+                <div class="map_srch_right cf">
+                    <p>매장검색</p>
+                    <span>지역검색</span>
+                    <select name="srch_reg" id="srch_reg">
+                        <option>시/도</option>
+                        <option value="서울">서울</option>
+                        <option value="대전">대전</option>
+                        <option value="세종">세종</option>
+                        <option value="충남">충남</option>
+                        <option value="충북">충북</option>
+                        <option value="인천">인천</option>
+                        <option value="강원">강원</option>
+                        <option value="경기">경기</option>
+                        <option value="광주">광주</option>
+                        <option value="전남">전남</option>
+                        <option value="전북">전북</option>
+                        <option value="부산">부산</option>
+                        <option value="경남">경남</option>
+                        <option value="울산">울산</option>
+                        <option value="제주">제주</option>
+                        <option value="대구">대구</option>
+                                        <option value="경북">경북</option>
+                    </select>
+                    <select name="srch_reg" id="srch_reg">
+                        <option>구/군</option>
+                    </select>
+                    <span>매장검색</span>
+                    <div class="sr_box">
+                        <input type="text" title="srchbox_reg" id="srchbox_reg" name="srchbox_reg">
+                        <button type="button">검색</button>
+                    </div>
+                    <span>서비스별 매장검색</span>
+                    <div class="serv_srch cf">
+                        <div class="serv serv1">
+                            <img src="images/store/img_store01.jpg" alt="">
+                            <input type="checkbox" id="dts" name="dts">
+                            <label for="dts">DT 매장</label>
+                        </div>
+                        <div class="serv serv2">
+                            <img src="images/store/img_store02.jpg" alt="">
+                            <input type="checkbox" id="terrace" name="terrace">
+                            <label for="terrace">테라스</label>
+                        </div>
+                        <div class="serv serv3">
+                            <img src="images/store/img_store03.jpg" alt="">
+                            <input type="checkbox" id="allday" name="allday">
+                            <label for="allday">24시간</label>
+                        </div>
+                        <div class="serv serv4">
+                            <img src="images/store/img_store04.jpg" alt="">
+                            <input type="checkbox" id="smoking" name="smoking">
+                            <label for="smoking">흡연시설</label>
+                        </div>
+                        <div class="serv serv5">
+                            <img src="images/store/img_store05.jpg" alt="">
+                            <input type="checkbox" id="parking" name="parking">
+                            <label for="parking">주차</label>
+                        </div>
+                        <div class="serv serv6">
+                            <img src="images/store/img_store06.jpg" alt="">
+                            <input type="checkbox" id="promo" name="promo">
+                            <label for="promo">프로모션</label>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <p class="in_store_ex">* 할리스커피 전 매장에서 무선인터넷 서비스 이용이 가능합니다 (단, 휴게소 및 특수매장 제외)</p>
+            <div class="in_store">
+                <table class="in_store_c">
+                    <colgroup>
+                        <col class="col1">
+                        <col class="col2">
+                        <col class="col3">
+                        <col class="col4">
+                        <col class="col5">
+                        <col class="col6">
+                    </colgroup>
+                    <tr>
+                        <th class="th1">지역</th>
+                        <th class="th2">매장명</th>
+                        <th class="th3">현황</th>
+                        <th class="th4">주소</th>
+                        <th class="th5">매장 서비스</th>
+                        <th class="th6">전화번호</th>
+                    </tr>
+                    <tr>
+                        <td class="c_10p m_td_dn">경기 포천시</td>
+                        <td class="c_10p m_td_w2"><a href="#">충남도청점</a></td>
+                        <td class="c_10p m_td_dn"></td>
+                        <td class="cadd m_td_w4">충청남도 홍성군 홍북읍 신경리 553</td>
+                        <td class="cimg m_td_w5">
+                            <img src="images/store/img_store_s08.jpg" alt="">
+                        </td>
+                        <td class="m_td_dn"><a href="tel:041-631-4725">041-631-4725</a></td>
+                    </tr>
+                    <tr>
+                        <td class="c_10p m_td_dn">경기 포천시</td>
+                        <td class="c_10p m_td_w2"><a href="#">포천내촌점</a></td>
+                        <td class="c_10p m_td_dn">오픈예정</td>
+                        <td class="cadd">경기도 포천시 내촌면 소학리 236</td>
+                        <td class="cimg"><img src="images/store/img_store_s08.jpg" alt=""></td>
+                        <td class="m_td_dn"></td>
+                    </tr>
+                    <tr>
+                        <td class="c_10p m_td_dn">서울 마포구</td>
+                        <td class="c_10p m_td_w2"><a href="#">홍대입구역점</a></td>
+                        <td class="c_10p m_td_dn">영업중</td>
+                        <td class="cadd">서울시 마포구 양화로 151 1층</td>
+                        <td class="cimg"><img src="images/store/img_store06.jpg" alt=""></td>
+                        <td class="m_td_dn"><a href="tel:02-322-3584">02-322-3584</a></td>
+                    </tr>
+                    <tr>
+                        <td class="c_10p m_td_dn">전남 장흥군</td>
+                        <td class="c_10p m_td_w2"><a href="#">전남장흥점</a></td>
+                        <td class="c_10p m_td_dn">영업중</td>
+                        <td class="cadd">전라남도 장흥군 장흥읍 북부로 18</td>
+                        <td class="cimg"></td>
+                        <td class="m_td_dn"><a href="tel:061-862-0119">061-862-0119</a></td>
+                    </tr>
+                    <tr>
+                        <td class="c_10p m_td_dn">강원 양양군</td>
+                        <td class="c_10p m_td_w2"><a href="#">낙산해수욕장점</a></td>
+                        <td class="c_10p m_td_dn">영업중</td>
+                        <td class="cadd">강원도 양양군 강현면 해맞이길18 1층 할리스커피</td>
+                        <td class="cimg"></td>
+                        <td class="m_td_dn"><a href="tel:033-672-7271">033-672-7271</a></td>
+                    </tr>
+                    <tr>
+                        <td class="c_10p m_td_dn">전북 군산시</td>
+                        <td class="c_10p m_td_w2"><a href="#">군산선유도점</a></td>
+                        <td class="c_10p m_td_dn">영업중</td>
+                        <td class="cadd">전라북도 군산시 옥도면 선유도리 213-4, 6</td>
+                        <td class="cimg"><img src="images/store/img_store_s02.jpg" alt=""></td>
+                        <td class="m_td_dn"><a href="tel:063-464-9315">063-464-9315</a></td>
+                    </tr>
+                    <tr>
+                        <td class="c_10p m_td_dn">전북 전주시 완산구</td>
+                        <td class="c_10p m_td_w2"><a href="#">전주남천교점</a></td>
+                        <td class="c_10p m_td_dn">영업중</td>
+                        <td class="cadd">전주천서로81</td>
+                        <td class="cimg"><img src="images/store/img_store_s08.jpg" alt=""></td>
+                        <td class="m_td_dn"></td>
+                    </tr>
+                    <tr>
+                        <td class="c_10p m_td_dn">대구 북구</td>
+                        <td class="c_10p m_td_w2"><a href="#">대구침산점</a></td>
+                        <td class="c_10p m_td_dn">영업중</td>
+                        <td class="cadd">대구광역시 북구 성북로 36</td>
+                        <td class="cimg"><img src="images/store/img_store_s08.jpg" alt=""><img src="images/store/img_store06.jpg" alt=""></td>
+                        <td class="m_td_dn"><a href="tel:053-353-5412">053-353-5412</a></td>
+                    </tr>
+                    <tr>
+                        <td class="c_10p m_td_dn">서울 용산구</td>
+                        <td class="c_10p m_td_w2"><a href="#">용산리첸시아점</a></td>
+                        <td class="c_10p m_td_dn">영업중</td>
+                        <td class="cadd">서울시 용산구 백범로341, 용산리첸시아 118호,119호</td>
+                        <td class="cimg"><img src="images/store/img_store_s08.jpg" alt=""></td>
+                        <td class="m_td_dn"><a href="tel:02-6012-6596">02-6012-6596</a></td>
+                    </tr>
+                    <tr>
+                        <td class="c_10p m_td_dn">울산 남구</td>
+                        <td class="c_10p m_td_w2"><a href="#">울산옥동대공원점</a></td>
+                        <td class="c_10p m_td_dn">영업중</td>
+                        <td class="cadd">문수로 377 (옥동)</td>
+                        <td class="cimg"><img src="images/store/img_store02.jpg" alt=""><img src="images/store/img_store_s08.jpg" alt=""><img src="images/store/img_store06.jpg" alt=""></td>
+                        <td class="m_td_dn"><a href="tel:070-7733-9102">070-7733-9102</a></td>
+                    </tr>
+                </table>
+                <div class="paging">
+                    <a href="#"><img src="images/news/btn_prev01.jpg" alt=""></a>
+                    <a href="#" class="active_p paging_num">1</a>
+                    <a href="#" class="paging_num">2</a>
+                    <a href="#" class="paging_num">3</a>
+                    <a href="#" class="paging_num">4</a>
+                    <a href="#" class="paging_num">5</a>
+                    <a href="#" class="paging_num">6</a>
+                    <a href="#" class="paging_num">7</a>
+                    <a href="#" class="paging_num">8</a>
+                    <a href="#" class="paging_num">9</a>
+                    <a href="#" class="paging_num">10</a>
+                    <a href="#"><img src="images/news/btn_next02.jpg" alt=""></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="footer">
+		<div class="footer_inner">
+			<ul class="cf">
+			<li><a href="#">개인정보처리방침</a></li>
+			<li><a href="#">서비스이용약관</a></li>
+			<li><a href="#">멤버십이용약관</a></li>
+			<li><a href="#">고객문의</a></li>
+			<li><a href="#">고객설문</a></li>
+			<li><a href="#">사이트맵</a></li>
+			<li class="footer_last"><a href="#">BI 소개</a></li>
+			</ul>
+			<p>법인명: (주) 할리스에프앤비 대표자: 김유진 사업자등록번호 211-87-61044 통신판매업: 제2012-서울강남-01081호<br>주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동) 대표전화 : 02-2188-7100 (가맹문의 : 1670-4432)<br>COPYRIGHT (C) HOLLYS COFFEECo., Ltd. All Rights Reserved.</p>
+		</div>
+	</div>
+
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>
