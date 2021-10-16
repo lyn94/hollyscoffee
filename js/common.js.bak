@@ -1,0 +1,131 @@
+/*
+  function initResponsive(size1,size2)
+  사이즈별로 html에 클래스를 변경함.
+  size1: pc 너비값 (기본값: 1024)
+  size2: mobile 너비값 (기본값:768)
+*/
+function initResponsive(size1,size2) {
+	var num = 0;
+	var html = $('html');
+	size1 = size1 || 1024;
+	size2 = size2 || 768;
+	var breakPoint = {
+		pcSize:size1,
+		mobileSize:size2
+	}
+	var w1 = html.css('overflow-y','hidden').width();
+	var w2 = html.css('overflow-y','scroll').width();
+
+	if(w1 - w2 > 0) {
+		breakPoint.pcSize -= 17;
+		breakPoint.mobileSize -= 17;
+	}
+
+
+	$(window).resize(function() {
+		var ts = $(this);
+		var w = ts.width();
+		/* 
+			PC: 1024이상 : class="pc"
+			Tablet: 800이상 ~ 1024미만 : class="tablet"
+			Mobile: 800미만 : class="mobile"
+
+			조건문을 이용하여
+			html 태그에 사이즈별로 클래스 값이 
+			바뀌도록 하시오.
+		*/
+
+		if (w >= breakPoint.pcSize) {
+			html.removeClass('tablet mobile').addClass('pc');
+		} else if (w >= breakPoint.mobileSize && w < breakPoint.pcSize) {
+			html.removeClass('pc mobile').addClass('tablet');
+		} else if(w < breakPoint.mobileSize) {
+			html.removeClass('pc tablet').addClass('mobile');	
+		}
+	});
+	$(window).trigger('resize');		
+}
+
+
+
+
+
+
+function gnbMenuInit() {
+	function gnbMenu(option) {
+		//pc 이벤트 등록
+		var gnbZone = $(option.element);
+		var gnbList = gnbZone.find('> ul > li');
+		var gnbTarget = gnbList.find('> a');
+		var pcEventType = option.pcEventType;
+		gnbZone.find('> ul').on('mouseleave', function() {
+			gnbList.find('ul').filter(':visible').hide();
+		});
+		$(document).on(pcEventType, gnbTarget.selector, function(e) {
+			gnbZone = $(option.element);
+			gnbList = gnbZone.find('> ul > li');
+			gnbTarget = gnbList.find('> a');
+
+			var ts = $(this);
+			if ($('html').hasClass('pc')) { //PC
+			  gnbList.find('ul').filter(':visible').hide();
+			  ts.next('ul').show();
+			} else { //Mobile
+			  e.preventDefault();
+			  var visibleSub = gnbList.find('ul').filter(':visible');
+			  console.log(gnbList);
+			  if (ts.next('ul').is(':visible')) {//클릭한 서브메뉴가 보이면
+				console.log(gnbList);
+				visibleSub.slideUp(300);
+			  } else {//클릭한 서브메뉴가 닫혀있으면
+				console.log(2222);
+				visibleSub.slideUp(300);
+				ts.next('ul').slideDown(300);
+			  }
+			}
+			
+		});
+	}
+	function mobileMenuOpen(option) {
+		var mobileMenuZone = $(option.element);
+		var eventTarget = mobileMenuZone.find('a');
+		eventTarget.on('click', function(e) {
+			e.preventDefault();
+			var mobileNavi = $('#tablet_nav');
+			mobileNavi.animate({right:0},500);
+		});
+	}
+	function mobileMenuClose(option) {
+		var eventTarget = $(option.element);
+		eventTarget.on('click', function(e) {
+			e.preventDefault();
+			var mobileNavi = $('#tablet_nav');
+			mobileNavi.animate({right:'-1000px'},500);
+		});
+	}
+	gnbMenu({element:'.pc #gnb', pcEventType:'mouseover'});
+	gnbMenu({element:'.mobile #gnb', pcEventType:'click'});
+	mobileMenuOpen({element:'.mobile_open_menu', eventType:'click'});
+	mobileMenuClose({element:'.gnb_close_btn', eventType:'click'});
+}
+function scrollFixdGnb() {
+	var body = $('body');
+	var gnbOffsetTop = parseInt(body.css('background-position-y'));
+	console.log(gnbOffsetTop);
+	var win = $(window);
+	win.on('scroll', function() {
+		var ts = $(this);
+		var sct = ts.scrollTop();
+		console.log(sct);
+		if (sct >= gnbOffsetTop - 10) {
+			body.addClass('gnbFixed');
+		} else {
+			body.removeClass('gnbFixed');
+		}
+	});
+}
+$(function() {
+	initResponsive(801,801);
+	gnbMenuInit();
+	scrollFixdGnb();
+});
