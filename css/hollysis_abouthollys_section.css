@@ -1,0 +1,147 @@
+#section {
+    font-family: 'NanumGothic';
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/* ****left_section**** */
+#left_section {
+    width: 20%;
+    padding: 20px 0 0 20px;
+    float: left;
+}
+.HMhollyscon {
+    margin: 30px 0px 60px 0;
+}
+.HMhollyscon p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.HMhollyscon p:hover {
+    color: #ba2025;
+}
+.HMhollyscon span a {
+    display: block;
+    font-size: 14px;
+    color: #303030;
+    padding: 3px 0 5px 22px;
+    font-weight: bold;
+}
+.HMhollyscon span a:hover {
+    color:#ba2025
+}
+.HMj_atv_s a{
+    color: #ba2025 !important;
+
+}
+.HMhollyscon .HMj_atv {
+    color: #ba2025;
+}
+.HMmem {
+    padding-bottom: 35px;
+}
+.HMmem a > img {
+    margin-bottom: 5px;
+}
+.HMmem_last {
+    margin-top: 35px;
+}
+.HMfes {
+    padding: 40px 0;
+    border-top: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    
+}
+
+
+
+/* ****right_section**** */
+.right_tit {
+    margin: 50px 0;
+}
+.right_tit p {
+    margin: 10px 0;
+}
+.rmsub {
+    font-size: 12px;
+}
+.rmtit {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#right_section {
+    width: 80%;
+    float: left;
+    padding: 0 30px;
+}
+
+.par1,
+.par2,
+.par3 {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.par1_con_1 {
+    margin: 50px 0;
+}
+.par_tit {
+    color: #b5121b;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px 0;
+}
+.par_con {
+    width: 50%;
+    float: left;
+    padding: 0 10px 0 0; 
+}
+#right_section div img {
+    margin: 50px 0;
+}
+.par2_con_2,
+.par3_con_2 {
+    padding-right: 0px;
+}
+div.par1 img {
+    margin-top: 10px !important;
+}
+
+
+@media screen and (max-width:1024px) {
+    
+    #left_section {
+        display: none !important;
+    }
+    #right_section{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:640px) {
+    
+    #left_section {
+        display: block;
+    }
+    #right_section{
+        width: 100%;
+    }
+    #right_section div p {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+#footer {
+    width: 100%;
+    background-color: #b91f24;
+    color: #fff;
+    font-size: 11px;
+    font-weight: lighter;
+    line-height: 1.5em;
+    margin-top: 50px;
+    padding: 0 20px;
+
+}
+.footer_inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    
+}
+#footer ul li {
+    float: left;
+    margin-right: 10px;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+
+    
+}
+#footer ul li:last-child {
+    border-right: none;
+}
+#footer ul {
+    margin-bottom: 20px;
+}
+#footer p {
+    color: rgba(255,255,255,0.7);
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+    /*    화면이 줄었을 때 가로 스크롤바 사라지게 함*/
+    html {
+        overflow-x: hidden;
+    }
+    
+
+}
+
+
+@media screen and (max-width:640px) {
+ 
+   #footer p {
+    color: #fff;
+}
+
+
+
+}

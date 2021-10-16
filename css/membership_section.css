@@ -1,0 +1,224 @@
+#section {
+    font-family: 'NanumGothic';
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/* ****left_section**** */
+#left_section {
+    width: 20%;
+    padding: 20px 0 0 20px;
+    float: left;
+}
+.HMhollyscon {
+    margin: 30px 0px 60px 0;
+}
+.HMhollyscon p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.HMhollyscon p:hover {
+    color: #ba2025;
+}
+.HMhollyscon .HMj_atv {
+    color: #ba2025;
+}
+.HMmem {
+    padding-bottom: 35px;
+}
+.HMmem a > img {
+    margin-bottom: 5px;
+}
+.HMmem_last {
+    margin-top: 35px;
+}
+.HMfes {
+    padding: 40px 0;
+    border-top: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    
+}
+
+
+
+
+/* ****right_section**** */
+.right_tit {
+    margin: 50px 0;
+}
+.right_tit p {
+    margin: 10px 0;
+}
+.rmsub {
+    font-size: 12px;
+}
+.rmtit {
+    font-size: 36px;
+    font-weight: bold;
+}
+#right_section {
+    width: 80%;
+    float: left;
+    padding: 0 30px;
+}
+.mem_con {
+    width: 100%;
+    margin-bottom: 100px;
+}
+.mem_con ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 12px;
+}
+.mem_con ul .arrow {
+    margin-top: 70px;
+}
+.mem_con ul li p[class^=bene_tit]{
+    font-weight: bold;
+    padding: 10px 0;
+}
+.mem_con ul li p {
+    padding: 10px 5px;
+    line-height: 1.5em;
+}
+.mem_con ul li p.bene_tit1{
+    color:#acabab;
+}
+.mem_con ul li p.bene_tit2{
+    color: #dfaa42;
+}
+.mem_con ul li p.bene_tit3{
+    color: #ba000c;
+}
+.mem_con ul li p.bene_con {
+    text-align: left;
+}
+.mem_cond {
+    line-height: 1.5em;
+    border-top: 1px solid #9f9f9f;
+    padding-top :40px 
+}
+.mem_cond span {
+    font-size: 12px;
+    font-weight: bold;
+}
+.mem_cond p {
+    font-size: 11px;    
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    /*    화면이 줄었을 때 가로 스크롤바 사라지게 함*/
+    html {
+        overflow-x: hidden;
+    }
+    #left_section {
+        display: none;
+    }
+    #right_section {
+        width: 100%;
+    }
+    .mem_con {
+        display: none !important;
+    }
+    .mem_con_m {
+        display: block !important;
+    }
+    
+    .mem_con_m .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .mem_con_m .container ul.tab {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .mem_con_m .container .tab li {
+        width: 33.3333%;
+        float: left;
+    }
+
+    .mem_con_m .container .tab li a {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        padding: 14px 16px;
+        font-size: 17px;
+        transition: 0.3s;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .mem_con_m .container .tab li:first-child a {
+        color: #acabab;
+    }
+
+    .mem_con_m .container .tab li:nth-child(2) a {
+        color: #dfaa42;
+    }
+
+    .mem_con_m .container .tab li:nth-child(3) a {
+        color: #ba000c;
+    }
+
+    .mem_con_m .container .tabcontent {
+        display: none;
+        background-color: #fff;
+        padding: 6px 12px;
+        color: #333;
+    }
+
+    .mem_con_m .container ul.tab li.current {
+        background-color: #fff;
+        border-bottom: 2px solid rgba(186, 0, 12, 0.7);
+    }
+
+    .mem_con_m .container .tabcontent.current {
+        display: block;
+    }
+    
+    /*  tabcontent style  */
+    div.tabcontent {
+        text-align: center;
+        font-size: 12px;
+        margin: 50px 0;
+    }
+    div.tabcontent div.bene_con {
+        text-align: left;
+        width: 100%;
+        margin: 50px auto;
+    }
+    div.tabcontent img {
+        margin: 15px 0;
+    }
+    div.tabcontent p {
+        margin: 10px 0;
+    }
+    
+    div.tabcontent p.bene_tit1,
+    div.tabcontent p.bene_tit2,
+    div.tabcontent p.bene_tit3 {
+        font-weight: bold;
+    }
+    
+    
+    
+}
+
+
+@media screen and (max-width:640px) {
+  
+
+}

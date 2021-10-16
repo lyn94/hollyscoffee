@@ -1,0 +1,431 @@
+#section {
+    font-family: 'NanumGothic';
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/* ****left_section**** */
+#left_section {
+    width: 20%;
+    padding: 20px 0 0 20px;
+    float: left;
+}
+.HMhollyscon {
+    margin: 30px 0px 60px 0;
+}
+.HMhollyscon p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.HMhollyscon p:hover {
+    color: #ba2025;
+}
+.HMhollyscon .HMj_atv {
+    color: #ba2025;
+}
+.HMmem {
+    padding-bottom: 35px;
+}
+.HMmem a > img {
+    margin-bottom: 5px;
+}
+.HMmem_last {
+    margin-top: 35px;
+}
+.HMfes {
+    padding: 40px 0;
+    border-top: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    
+}
+
+
+
+/* ****right_section**** */
+.right_tit {
+    margin: 50px 0;
+}
+.right_tit p {
+    margin: 10px 0;
+}
+.rmsub {
+    font-size: 12px;
+}
+.rmtit {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#right_section {
+    width: 80%;
+    float: left;
+    padding: 0 30px;
+}
+
+/* ***지도 선택하여 hover했을 때 지역이름 이미지 뜨기 ****/
+.mapping{
+    position: relative;
+    float: left;
+}
+
+
+.mapping .city_layer01 {
+    position: absolute;
+    top: 70px;
+    left: 150px;
+}
+.mapping .city_layer02 {
+    position: absolute;
+    top: 243px;
+    left: 260px;
+}
+.mapping .city_layer03 {
+    position: absolute;
+    top: 195px;
+    left: 238px;
+}
+.mapping .city_layer04 {
+    position: absolute;
+    top: 70px;
+    left: 130px;
+}
+.mapping .city_layer05 {
+    position: absolute;
+    top: 250px;
+    left: 135px;
+}
+.mapping .city_layer06 {
+    position: absolute;
+    top: 160px;
+    left: 167px;
+}
+.mapping .city_layer07 {
+    position: absolute;
+    top: 215px;
+    left: 285px;
+}
+.mapping .city_layer08 {
+    position: absolute;
+    top: 70px;
+    left: 230px;
+}
+.mapping .city_layer09 {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+.mapping .city_layer10 {
+    position: absolute;
+    top: 235px;
+    left: 220px;
+}
+.mapping .city_layer11 {
+    position: absolute;
+    top: 155px;
+    left: 250px;
+}
+.mapping .city_layer12 {
+    position: absolute;
+    top: 275px;
+    left: 145px;
+}
+.mapping .city_layer13 {
+    position: absolute;
+    top: 275px;
+    left: 145px;
+}
+.mapping .city_layer14 {
+    position: absolute;
+    top: 205px;
+    left: 150px;
+}
+.mapping .city_layer15 {
+    position: absolute;
+    top: 155px;
+    left: 140px;
+}
+.mapping .city_layer16 {
+    position: absolute;
+    top: 140px;
+    left: 180px;
+}
+.mapping .city_layer17 {
+    position: absolute;
+    top: 320px;
+    left: 130px;
+}
+
+
+.map_srch_right {
+    float: left;
+    padding-left: 20px;
+}
+
+.map_srch_right p {
+    font-size: 16px;
+    color: #303030;
+    font-weight: bold;
+    width: 100%;
+}
+.map_srch_right span {
+    display: block;
+    margin: 20px 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+}
+.map_srch_right select {
+    display: block;
+    margin: 10px 0;
+    font-size: 12px;
+    width: 75%;
+    height: 30px;
+}
+
+.map_srch_right input[type=text]{
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+}
+.map_srch_right button[type=button] {
+    height: 30px;
+    vertical-align: middle;
+    width: 40px;
+    border: 1px solid #999;
+    transition: all 0.3s;
+}
+.map_srch_right button[type=button]:hover {
+    background: #b91f24;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #b91f24;
+
+}
+
+.map_srch_right .serv_srch {
+    width: 280px;
+}
+
+.map_srch_right .serv_srch div {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    height: 80px;
+    line-height: 30px;
+    padding: 13px 0 0 0;
+    font-size: 12px;
+}
+
+.serv_srch .serv > img {
+    display: block;
+    margin: 0 auto;
+}
+.serv input[type=checkbox] {
+    vertical-align: middle;
+}
+
+
+/* *** 하단 표*** */
+table.in_store_c {
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #303030;
+}
+table.in_store_c tr th {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 1px solid #303030;
+}
+table.in_store_c tr td {
+    padding: 10px;
+    border-top: 1px solid #d9d9d9;
+}
+table.in_store_c tr td.cimg > img {
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+}
+
+.col1{
+    width: 15%;
+}
+.col2{
+    width: 10%;
+}
+.col3 {
+    width: 10%;
+}
+.col4{
+    width: 40%;
+}
+.col5 {
+    width: 15%;
+}
+.col6 {
+    width: 10%;
+}
+
+/* *** 표 하단의 paging *** */
+div.in_store .paging {
+    text-align: center;
+    margin-top: 20px;
+}
+div.in_store .paging a {
+    color: #303030;
+    padding: 3px 7px;
+    transition: all 0.3s;
+    font-size: 12px;
+}
+div.in_store .paging a.paging_num:hover {
+    background: rgba(185,31,36,0.5);
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+p.in_store_ex {
+    font-size: 12px;
+    color: #6f6f6f;
+    margin: 50px 0 20px 0;
+}
+
+
+@media screen and (max-width:1024px) {
+    
+    #left_section{
+        display: none;
+    }
+    #right_section {
+        width: 100%;
+        
+    }
+
+    .map_srch_right{
+        margin-top:30px;
+    }
+    
+    .map_srch_right select{
+        width: 50%;
+    }
+    .map_srch_right .serv_srch {
+    }
+    .map_srch_right .serv_srch div {
+        width: 33.3333%;
+    }
+    .map_srch_right input[type=text] {
+        width: 60%;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:805px) {
+    
+    .map_srch_right {
+        width: 100%;        
+    }
+    
+    .map_srch_right select{
+        width: 50%;
+    }
+    .map_srch_right .serv_srch {
+        width: 50%;
+    }
+    .map_srch_right .serv_srch div {
+        width: 33.3333%;
+    }
+    .map_srch_right input[type=text] {
+        width: 45%;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:640px) {
+    #left_section {
+        display: none;
+    }
+    
+    #right_section {
+        width: 100%;
+        
+    }
+    .mapping {
+        display: none;
+    }
+    
+    .map_srch_right {
+        float: left;
+        margin: 0px;
+        width: 100%;
+    }
+    .map_srch_right > select {
+        width: 100%;
+    }
+    
+    .map_srch_right > input[type=text]{
+        width: 84%;
+        float: left;
+        margin-right: 1%
+    }
+    .map_srch_right > button[type=button]{
+        width: 15%;
+    }
+    .map_srch_right .serv_srch {
+        width: 100%;
+    }
+    .serv_srch > div {
+        width: 33.3333%;
+    }
+   
+    .paging_num {
+        display: none;
+    }
+    .th1,
+    .th3,
+    .th6,
+    .m_td_dn{
+        display: none;
+    }
+    .m_td_w2 {
+        width: 20%;
+    }
+    .m_td_w4 {
+        width: 50%;
+    }
+    .m_td_w5 {
+        width: 30%;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

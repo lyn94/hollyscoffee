@@ -1,0 +1,350 @@
+/*bx-slider*/
+
+#section {
+    width: 100%;
+}
+
+#figure1_box {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#figure1 {
+    margin: 0 auto;
+}
+
+#figure2_box {
+    display: none;
+}
+
+#figure1 div {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#figure1_box .bx-wrapper .bx-prev {
+    top: 50%;
+    left: 40px;
+    width: 44px;
+    height: 79px;
+    background: url('../bxslider/images/p_arrow.png') no-repeat;
+}
+
+#figure1_box .bx-wrapper .bx-next {
+    top: 50%;
+    right: 40px;
+    width: 44px;
+    height: 79px;
+    background: url('../bxslider/images/n_arrow.png') no-repeat;
+}
+
+/* ***section01*** */
+
+#section01 {
+    max-width: 1300px;
+    margin: 50px auto 0;
+}
+
+.fs {
+    width: 100%;
+}
+
+.fs > li {
+    display: inline-block;
+    float: left;
+}
+
+/*m_left*/
+
+.m_left img {
+    display: block;
+}
+
+/*m_right*/
+
+.m_right img {
+    display: block;
+    float: right;
+}
+
+
+/*.m_center*/
+
+.m_center {
+    height: 71px;
+}
+
+.m_center .h_menu {
+    text-align: center;
+}
+
+.m_center .h_menu li {
+    display: inline-block;
+    width: 20%;
+    padding: 3% 2%;
+    margin: 3% 1%;
+    text-align: center;
+    border: 1px dotted transparent;
+}
+
+.m_center .h_menu li:hover {
+    border: 1px dotted rgba(185, 37, 40, 0.5);
+}
+
+.m_center .h_menu li > a > img {
+    height: 71px;
+    vertical-align: middle;
+}
+
+.m_center .h_menu li > a > p {
+    font-size: 12px;
+}
+
+.m_center .mtit {
+    padding: 13px 30px;
+}
+
+.m_center .msubt {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+
+/*m_xxx 넓이 지정*/
+
+.m_left {
+    width: 20%;
+}
+
+.m_right {
+    width: 20%;
+}
+
+.m_center {
+    width: 60%;
+}
+
+
+
+/* ***section02*** */
+
+#section02 {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.b_box {}
+
+.b_box a > img {
+    float: left;
+    width: 50%;
+    padding-top: 50px;
+}
+
+.banner1 {
+    padding-right: 0.5%;
+}
+
+.banner2 {
+    padding-left: 0.5%;
+}
+
+
+
+/* ***section03*** */
+
+#section03 {
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.s03_box {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.s03_box ul {
+    float: left;
+    width: 25%;
+    padding-right: 10px;
+}
+
+.s03_box ul li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+.inner04 {
+    padding-top: 0px;
+}
+
+.inner04 li {
+    float: left;
+    text-align: center;
+    width: 33.33333%;
+}
+
+
+
+/* ***section04*** */
+
+#section04 {
+    width: 100%;
+    border-top: 2px solid #b91f24;
+    margin-top: 100px;
+}
+
+.s04_box {
+    max-width: 1300px;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.s04_con {
+    margin-top: 20px;
+}
+
+.s04_con ul li > a > img {
+    float: left;
+    margin-right: 3px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.s04_con ul li {
+    float: left;
+    width: 24%;
+    height: 100px;
+    margin-right: 1%;
+}
+
+.s04_con ul li > a > p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-bottom: 5px;
+
+}
+
+.date {
+    color: #0656a5;
+    font-weight: bold;
+}
+
+#section01,
+#section02,
+#section03,
+#section04 {
+    padding: 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    /*    화면이 줄었을 때 가로 스크롤바 사라지게 함*/
+    html {
+        overflow-x: hidden;
+    }
+
+    #section01 .h_menu li {
+        width: 30%;
+    }
+
+
+}
+
+
+@media screen and (max-width:640px) {
+    /*bx-slider*/
+    #section {
+        width: 100%;
+    }
+
+    #figure1_box {
+        display: none;
+    }
+
+    #figure2_box {
+        display: block;
+        max-width: 100%;
+    }
+
+
+
+    /* ***section01*** */
+    #section01 {
+        display: none;
+    }
+    #section01_m {
+        display: block !important;
+    }
+
+    #section01_m ul {
+        margin: 40px 0 30px;
+    }
+
+    #section01_m ul li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #section01_m ul li > a > img {
+        display: block;
+        margin: 0 auto 10px;
+        width: 35%;
+
+    }
+
+
+
+    /* ***section02*** */
+    #section02 {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    .b_box a > img {
+        float: left;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .banner1,
+    .banner2 {
+        padding: 0%;
+    }
+
+    #section03,
+    #section04 {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
